@@ -53,10 +53,10 @@ a {
 /*width*/
 /*******/
 /*fload*/
-.fl, header .nav-wide .nav-left, .nav-left > div, .nav-left > ul, .nav-left > ul > li {
+.fl, header .nav-wide .nav-left, .nav-left > div, .nav-left > ul, .nav-left > ul > li, .nav-left .nav-logo .nav-card > ul, footer .footer-left {
   float: left; }
 
-.fr, header .nav-wide .nav-right {
+.fr, header .nav-wide .nav-right, footer .footer-right {
   float: right; }
 
 .clearfix:after {
@@ -84,10 +84,10 @@ header {
   background: linear-gradient(top, rgba(0, 0, 0, 0.4), transparent); }
   header .nav-wide {
     width: 100%;
-    min-width: 800px;
+    min-width: 1000px;
     max-width: 1200px;
     height: 100%;
-    padding: 0 30px;
+    padding: 0 10px;
     margin: 0 auto; }
 
 .nav-left {
@@ -105,18 +105,23 @@ header {
       width: 100%; }
     .nav-left .nav-logo .nav-card {
       position: absolute;
-      left: -30px;
+      left: 0;
       top: 100%;
       z-index: 1;
-      width: 710px;
+      width: 720px;
       height: 480px;
       padding: 30px 0;
       margin-top: 1px;
       background: #fff;
       box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
       opacity: 0;
+      visibility: hidden;
       -webkit-transition: opacity .5s ease;
               transition: opacity .5s ease; }
+      .nav-left .nav-logo .nav-card > ul {
+        display: inline-block; }
+        .nav-left .nav-logo .nav-card > ul > li > a {
+          color: #000; }
       .nav-left .nav-logo .nav-card .nav-card-nav {
         position: relative;
         width: 130px; }
@@ -129,15 +134,15 @@ header {
         height: 225px;
         background-image: url(../img/navCardlogo.png);
         background-size: 100% 100%; }
-    .nav-left .nav-logo .nav-card:before {
+    .nav-left .nav-logo .nav-card::before {
       content: '';
       position: absolute;
       top: -12px;
-      left: 85px;
+      left: 120px;
       border: 6px solid transparent;
       margin-left: -6px;
       border-bottom-color: #fff; }
-    .nav-left .nav-logo .nav-card:after {
+    .nav-left .nav-logo .nav-card::after {
       content: '';
       position: absolute;
       top: -1px;
@@ -146,15 +151,29 @@ header {
       height: 1px;
       background-color: #fff; }
   .nav-left .nav-logo:hover .nav-card {
-    opacity: 1; }
+    opacity: 1;
+    visibility: visible; }
   .nav-left .nav-card .nav-card-nav li {
     position: relative;
     height: 21px;
     padding-left: 60px;
     margin-top: 20px;
-    line-height: 21px; }
+    line-height: 20px; }
   .nav-left .nav-card .nav-card-nav li:first-child {
     margin: 0; }
+  .nav-left .nav-card .nav-card-nav li.active::after {
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: 4px;
+    border: 6px solid transparent;
+    border-right-color: #ccc; }
+  .nav-left .nav-card .nav-card-panel {
+    width: 590px;
+    padding-left: 22px;
+    padding-right: 30px;
+    border-left: 1px solid #e8e8e8;
+    font-size: 14px; }
   .nav-left .nav-list > li > a {
     display: block;
     padding: 22px 20px;
@@ -198,6 +217,60 @@ header {
       color: #fff;
       cursor: progress; }
 
+.panel-item {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-top: 15px; }
+  .panel-item dl {
+    max-height: 80px;
+    overflow: hidden; }
+    .panel-item dl .tag-title {
+      padding-left: 8px;
+      margin-bottom: 3px; }
+      .panel-item dl .tag-title a {
+        color: #505050;
+        font-size: 14px; }
+      .panel-item dl .tag-title a:hover {
+        color: #ffa800; }
+  .panel-item dd li {
+    display: inline-block; }
+    .panel-item dd li a {
+      display: block;
+      width: 44px;
+      height: 21px;
+      border: 1px solid #fff;
+      border-radius: 4px;
+      margin-right: 5px;
+      margin-top: 7px;
+      line-height: 20px;
+      text-align: center;
+      color: #222;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .panel-item dd li a:hover {
+      border-color: #ffa800; }
+
+.panel-item:first-child {
+  margin-top: 0; }
+
+.panel-item:last-child {
+  border: 0; }
+
+.nav-found a::after, .nav-communication a::after {
+  content: "";
+  display: inline-block;
+  border: 4px solid transparent;
+  margin-left: 3px;
+  margin-top: 2px;
+  border-top-color: #fff;
+  vertical-align: middle; }
+
+.nav-found a:hover::after, .nav-communication a:hover::after {
+  margin-top: -7px;
+  border-top-color: transparent;
+  border-bottom-color: #fff; }
+
 .nav-right {
   height: 100%; }
   .nav-right a {
@@ -214,5 +287,69 @@ header {
     background-color: #ffa800; }
 
 /*header end*/
+/*footer start*/
+footer {
+  margin: 0 auto;
+  max-width: 1000px;
+  font-size: 13px;
+  border-top: 1px solid #999;
+  height: 30px;
+  padding: 6px 0;
+  color: #999; }
+  footer a {
+    color: #999; }
+  footer .footer-left {
+    line-height: 24px; }
+  footer .footer-right {
+    line-height: 24px; }
+    footer .footer-right .sns-icons a {
+      display: inline-block;
+      height: 16px;
+      width: 16px;
+      background: url(../img/snsIcons.gif) no-repeat;
+      background-size: 100% 400%; }
+    footer .footer-right .sns-icons .weibo {
+      background-position: 0 -16px; }
+    footer .footer-right .sns-icons .weibo:hover {
+      background-position: 0 0; }
+    footer .footer-right .sns-icons .weixin {
+      background-position: 0 -48px; }
+    footer .footer-right .sns-icons .weixin:hover {
+      background-position: 0 -32px; }
+  footer a:hover {
+    text-decoration: underline; }
+
+/*footer end*/
+/*gotop start*/
+.gotop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.95);
+  cursor: pointer; }
+
+.gotop:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #333;
+  border-left-width: 0;
+  border-bottom-width: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+/*gotop end*/
+section {
+  height: 3000px; }
 
 /*# sourceMappingURL=indexStyle.css.map */
