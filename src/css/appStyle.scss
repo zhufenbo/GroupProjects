@@ -1,0 +1,58 @@
+@import 'indexStyle.scss';
+
+body{
+    background-color: #000;
+}
+header{
+    position: static;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+    .content {
+        width: 100%;
+        height: 600px;
+        background-image: url(../img/app/APPbg.jpg);
+        background-position: center top;
+        .download-main {
+            position: absolute;
+            top: 210px;
+            left: 50%;
+            width: 240px;
+            margin-left: -320px;
+        }
+        .download-qrcode {
+            position: absolute;
+            top: 340px;
+            left: 50%;
+            width: 90px;
+            margin-left: -180px;
+            border-radius: 3px;
+        }
+        .download-iphone {
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            width: 500px;
+            margin-left: -50px;
+        }
+        .download-item {
+            position: absolute;
+            left: 50%;
+            width: 120px;
+            height: 39px;
+            border-radius: 3px;
+            margin-left: -309px;
+        }
+        .item-iphone {
+            top: 339px;
+        }
+        .item-android {
+            top: 391px;
+        }
+    }
+}
+footer{
+    border: 0;
+}
