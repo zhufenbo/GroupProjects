@@ -1,0 +1,9 @@
+# 排除以这些后缀名结尾的文件不要上传
+*.project
+*.idea
+*.vscode
+*.bak
+
+# 排除这些文件夹里的东西不要上传
+bower_components/
+node_modules/
