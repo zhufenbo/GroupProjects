@@ -959,7 +959,6 @@ header {
   font-size: 14px;
   line-height: 1.42857143;
   color: #555;
-  vertical-align: middle;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -1031,8 +1030,7 @@ input[type=text], input[type=password] {
   display: block;
   min-height: 20px;
   margin-top: 10px;
-  margin-bottom: 10px;
-  vertical-align: middle; }
+  margin-bottom: 10px; }
 
 .btn-primary {
   color: #fff;
