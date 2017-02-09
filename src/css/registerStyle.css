@@ -53,7 +53,7 @@ a {
 /*width*/
 /*******/
 /*fload*/
-.fl, header .nav-wide .nav-left, .nav-left > div, .nav-left > ul, .nav-left > ul > li, .nav-left .nav-logo .nav-card > ul, footer .footer-left, .register .main {
+.fl, header .nav-wide .nav-left, .nav-left > div, .nav-left > ul, .nav-left > ul > li, .nav-left .nav-logo .nav-card > ul, footer .footer-left, .register .main, .aside {
   float: left; }
 
 .fr, header .nav-wide .nav-right, footer .footer-right {
@@ -1055,5 +1055,51 @@ input[type=text], input[type=password] {
   border-color: #122e52; }
 
 /*form end*/
+/*aside start*/
+.aside {
+  width: 250px;
+  padding: 0 7px; }
+  .aside .side {
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.18);
+    border-radius: 2px;
+    position: relative;
+    margin: 0 0 14px; }
+    .aside .side .card-header {
+      padding: 6px 8px;
+      background-color: #f5f5f5;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      border-bottom: 1px solid #ddd;
+      font-size: 16px;
+      margin: 0;
+      line-height: 28px; }
+    .aside .side a {
+      text-align: left;
+      display: inline-block;
+      width: 52px;
+      height: 52px;
+      margin: 8px;
+      background: url(../img/register/login-icon-round.png) no-repeat; }
+    .aside .side .weibo-btn {
+      background-position: 0 -108px; }
+    .aside .side .qq-btn {
+      background-position: -54px -108px; }
+    .aside .side .weixin-btn {
+      background-position: -108px -108px; }
+    .aside .side .weibo-btn:hover {
+      background-position: 0 -54px; }
+    .aside .side .qq-btn:hover {
+      background-position: -54px -54px; }
+    .aside .side .weixin-btn:hover {
+      background-position: -108px -54px; }
+    .aside .side ul {
+      font-size: 14px; }
+  .aside .side::before,
+  .aside .side::after {
+    content: " ";
+    display: table; }
+
+/*aside end*/
 
 /*# sourceMappingURL=registerStyle.css.map */

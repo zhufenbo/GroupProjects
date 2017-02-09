@@ -193,3 +193,61 @@ input[type=text], input[type=password] {
     border-color: #122e52;
 }
 /*form end*/
+/*aside start*/
+.aside{
+    width: 250px;
+    padding: 0 7px;
+    @extend .fl;
+    .side{
+            background-color: $bgWhite;
+            box-shadow: 0 2px 3px rgba(0,0,0,0.18);
+            border-radius: 2px;
+            position: relative;
+            margin: 0 0 14px;
+            .card-header{
+                padding: 6px 8px;
+                background-color: #f5f5f5;
+                border-top-left-radius: 2px;
+                border-top-right-radius: 2px;
+                border-bottom: 1px solid #ddd;
+                font-size: $f16;
+                margin: 0;
+                line-height: 28px;
+            }
+            a{
+                text-align: left;
+                display: inline-block;
+                width: 52px;
+                height: 52px;
+                margin: 8px;
+                background: url(../img/register/login-icon-round.png) no-repeat;
+            }
+            .weibo-btn{
+                background-position:  0 -108px;
+            }
+            .qq-btn{
+                background-position: -54px -108px;
+            }
+            .weixin-btn{
+                background-position: -108px -108px;
+            }
+            .weibo-btn:hover{
+                background-position:  0 -54px;
+            }
+            .qq-btn:hover{
+                background-position: -54px -54px;
+            }
+            .weixin-btn:hover{
+                background-position: -108px -54px;
+            }
+            ul{
+                font-size: $f14;
+            }
+    }
+    .side::before,
+    .side::after {
+        content: " ";
+        display: table;
+    }
+}
+/*aside end*/
