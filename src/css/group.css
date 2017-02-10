@@ -764,5 +764,209 @@ footer {
   to {
     transform: translate3d(-100%, 0, 0);
     z-index: -1; } }
+header {
+  position: static; }
 
-/*# sourceMappingURL=indexStyle.css.map */
+@media all and (min-width: 720px) {
+  body {
+    font-size: 12px;
+    background-color: #EAEAEA; }
+
+  .flex {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; }
+
+  .opa.active {
+    opacity: .8;
+    -webkit-animation-name: y-ain;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-iteration-count: infinite; }
+
+  @-webkit-keyframes y-ain {
+    0% {
+      -webkit-transform: rotateY(0deg); }
+    50% {
+      -webkit-transform: rotateY(180deg); }
+    100% {
+      -webkit-transform: rotateY(360deg); } }
+  * {
+    box-sizing: border-box; }
+
+  li {
+    list-style: none; }
+
+  .content {
+    width: 1000px;
+    margin: 0 auto; }
+
+  fontbig, .title ul li {
+    font-size: 16px;
+    font-family: arial;
+    height: 60px;
+    line-height: 60px; }
+
+  fl, .title ul li {
+    float: left; }
+
+  fr {
+    float: right; }
+
+  clear, .content, .title ul {
+    overflow: hidden; }
+
+  fonthight, .title ul li, .title_left .title_main {
+    height: 25px;
+    line-height: 25px; }
+
+  .title {
+    padding-top: 15px; }
+    .title ul li {
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      width: 70px;
+      margin-right: 40px;
+      border-bottom: 4px solid transparent; }
+    .title ul li:hover {
+      border-bottom: 4px solid #FFA800;
+      font-weight: 600; }
+    .title ul li:nth-of-type(2) {
+      border-bottom: 4px solid #FFA800;
+      font-weight: 600; }
+
+  hr {
+    margin-top: -3px;
+    margin-bottom: 20px; }
+
+  .title_top {
+    margin-top: 20px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 20px;
+    color: #225599;
+    background-color: #F5F5F5; }
+
+  .title_top:hover {
+    color: blue;
+    font-weight: 600; }
+
+  .title_left {
+    float: left;
+    width: 72%; }
+    .title_left .title_main {
+      height: 150px;
+      background: white; }
+      .title_left .title_main ul {
+        padding: 20px;
+        width: 48%;
+        float: left; }
+        .title_left .title_main ul li a {
+          margin-left: 10px; }
+
+  .title_right {
+    float: right; }
+    .title_right .ritop {
+      width: 240px;
+      color: black; }
+    .title_right .rimain {
+      background-color: white;
+      padding: 20px;
+      height: 90px; }
+      .title_right .rimain #s {
+        background: #225599;
+        color: white;
+        width: 60%;
+        padding: 15px; }
+      .title_right .rimain #s:hover {
+        background-color: blue; }
+
+  .secone {
+    width: 35%;
+    background-color: white;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 0 18px 10px 0; }
+    .secone img {
+      float: left;
+      width: 60px;
+      height: 60px;
+      margin: 10px; }
+    .secone ul {
+      height: 80px;
+      overflow: hidden;
+      color: #888; }
+      .secone ul li {
+        line-height: 20px; }
+        .secone ul li span {
+          line-height: 40px;
+          font-size: 16px;
+          font-family: arial;
+          font-weight: 600;
+          color: #225599;
+          margin-right: 20px; }
+
+  .footone {
+    overflow: hidden; }
+    .footone ul {
+      position: relative;
+      margin-right: 289px;
+      float: right;
+      overflow: hidden; }
+      .footone ul li {
+        padding: 20px 0;
+        float: left;
+        margin-right: 10px;
+        width: 40px; }
+        .footone ul li input {
+          background-color: white;
+          width: 45px;
+          height: 35px;
+          border: none; }
+        .footone ul li .input:hover {
+          background-color: #225599;
+          color: white; }
+      .footone ul li:nth-of-type(7) {
+        width: 80px;
+        margin-top: 10px; }
+      .footone ul li:nth-of-type(9) {
+        margin-top: 10px; }
+      .footone ul .ten:hover {
+        background-color: #225599;
+        color: white; }
+
+  .eignt {
+    position: relative; }
+
+  .jia {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: -2px; }
+
+  .jian {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 0px; }
+
+  .back-top {
+    position: fixed;
+    right: 300px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    float: right; }
+    .back-top img {
+      width: 50px; } }
+.ff {
+  margin-top: 20px;
+  margin-bottom: 50px; }
+
+/*# sourceMappingURL=group.css.map */

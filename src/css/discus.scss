@@ -1,0 +1,143 @@
+@import "indexStyle";
+header{position: static;}
+@media all and (min-width: 720px){
+$backgroundcolor:#EAEAEA;
+$fontcolor:#225599;
+$earecolor:#F5F5F5;
+$hovercolor:#FFA800;
+$maincolor:white;
+
+body{
+    font-size: 12px;
+    background-color: $backgroundcolor;
+}
+.flex{
+    position: fixed;top: 0;left: 0;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    @extend clear;
+}
+fontbig{
+    font-size: 16px;
+    font-family: arial;
+    height: 60px;
+    line-height: 60px;
+}
+fl{
+    float: left;
+}
+fr{
+    float: right;
+}
+clear{
+    overflow: hidden;
+}
+fonthight{
+    height: 25px;
+    line-height: 25px;
+}
+//正文标题部分
+.title{
+    ul{
+        @extend clear;
+        li{
+            margin-top: 20px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 70px;
+            @extend fontbig;
+            @extend fonthight;
+            @extend fl;
+            margin-right: 40px;
+            border-bottom: 4px solid transparent;
+            border-bottom: 4px solid $hovercolor;
+            font-weight: 600;
+        }
+    }
+}
+    hr{
+        margin-top: -3px;
+        margin-bottom: 20px;
+    }
+.title_left{
+    float: left;
+    width: 72%;
+    .title_main{
+        margin-top: 20px;
+        height: 150px;
+        @extend fonthight;
+        background: $maincolor;
+        img{
+            float: left;
+            margin: 20px;
+        }
+        ul{
+            color: cornflowerblue;
+             li:nth-of-type(1){
+                 color: $fontcolor;
+                 font-size: 16px;
+                 font-weight: 600;
+             }
+             
+            padding: 20px;
+            width: 48%;
+            float: left;
+            li{
+                span{
+                    color: #888888;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+    .title_right{
+        float: right;
+        ul{
+            margin-top: 20px;
+            width: 240px;
+            li:nth-of-type(1){
+                font-size: 18px;
+                color: black;
+                font-weight: 600;
+                background: #eef;
+                padding: 10px;
+                cursor: pointer;
+            }
+            li{
+                overflow: hidden;
+                border: 1px solid #eee;
+                background-color: white;
+                color: $fontcolor;
+   
+                img{
+                    float: left;
+                    width: 60px;height: 60px;padding: 10px;
+                }
+                span{
+                    float: left;
+                    display: inline-block;
+                    line-height: 60px;
+                    margin-left: 20px;
+                }
+            }
+            li:hover{
+                background-color: #eef;
+            }
+        }
+    }
+}
+footer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

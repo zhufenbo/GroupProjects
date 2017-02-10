@@ -764,5 +764,118 @@ footer {
   to {
     transform: translate3d(-100%, 0, 0);
     z-index: -1; } }
+header {
+  position: static; }
 
-/*# sourceMappingURL=indexStyle.css.map */
+@media all and (min-width: 720px) {
+  body {
+    font-size: 12px;
+    background-color: #EAEAEA; }
+
+  .flex {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; }
+
+  * {
+    box-sizing: border-box; }
+
+  li {
+    list-style: none; }
+
+  .content {
+    width: 1000px;
+    margin: 0 auto; }
+
+  fontbig, .title ul li {
+    font-size: 16px;
+    font-family: arial;
+    height: 60px;
+    line-height: 60px; }
+
+  fl, .title ul li {
+    float: left; }
+
+  fr {
+    float: right; }
+
+  clear, .content, .title ul {
+    overflow: hidden; }
+
+  fonthight, .title ul li, .title_left .title_main {
+    height: 25px;
+    line-height: 25px; }
+
+  .title ul li {
+    margin-top: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    width: 70px;
+    margin-right: 40px;
+    border-bottom: 4px solid transparent;
+    border-bottom: 4px solid #FFA800;
+    font-weight: 600; }
+
+  hr {
+    margin-top: -3px;
+    margin-bottom: 20px; }
+
+  .title_left {
+    float: left;
+    width: 72%; }
+    .title_left .title_main {
+      margin-top: 20px;
+      height: 150px;
+      background: white; }
+      .title_left .title_main img {
+        float: left;
+        margin: 20px; }
+      .title_left .title_main ul {
+        color: cornflowerblue;
+        padding: 20px;
+        width: 48%;
+        float: left; }
+        .title_left .title_main ul li:nth-of-type(1) {
+          color: #225599;
+          font-size: 16px;
+          font-weight: 600; }
+        .title_left .title_main ul li span {
+          color: #888888;
+          margin-left: 20px; }
+
+  .title_right {
+    float: right; }
+    .title_right ul {
+      margin-top: 20px;
+      width: 240px; }
+      .title_right ul li:nth-of-type(1) {
+        font-size: 18px;
+        color: black;
+        font-weight: 600;
+        background: #eef;
+        padding: 10px;
+        cursor: pointer; }
+      .title_right ul li {
+        overflow: hidden;
+        border: 1px solid #eee;
+        background-color: white;
+        color: #225599; }
+        .title_right ul li img {
+          float: left;
+          width: 60px;
+          height: 60px;
+          padding: 10px; }
+        .title_right ul li span {
+          float: left;
+          display: inline-block;
+          line-height: 60px;
+          margin-left: 20px; }
+      .title_right ul li:hover {
+        background-color: #eef; } }
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+/*# sourceMappingURL=discus.css.map */

@@ -1,0 +1,242 @@
+@import "indexStyle";
+header{position: static;}
+@media all and (min-width: 720px){
+$backgroundcolor:#EAEAEA;
+$fontcolor:#225599;
+$earecolor:#F5F5F5;
+$hovercolor:#FFA800;
+$maincolor:white;
+body{
+    font-size: 12px;
+    background-color: $backgroundcolor;
+}
+.flex{
+    position: fixed;top: 0;left: 0;
+    width: 100%;
+}
+
+.opa.active{
+    opacity: .8;
+    -webkit-animation-name:y-ain;
+    -webkit-animation-duration:5s;
+    -webkit-animation-timing-function:ease;
+    -webkit-animation-iteration-count:infinite;
+    }@-webkit-keyframes y-ain{
+    0%{-webkit-transform:rotateY(0deg);}
+    50%{-webkit-transform:rotateY(180deg);}
+    100%{-webkit-transform:rotateY(360deg);}
+}
+*{
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    @extend clear;
+}
+fontbig{
+    font-size: 16px;
+    font-family: arial;
+    height: 60px;
+    line-height: 60px;
+}
+fl{
+    float: left;
+}
+fr{
+    float: right;
+}
+clear{
+    overflow: hidden;
+}
+fonthight{
+    height: 25px;
+    line-height: 25px;
+}
+//正文标题部分
+.title{
+    padding-top: 15px;
+    ul{
+        @extend clear;
+        li{
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            width: 70px;
+            @extend fontbig;
+            @extend fonthight;
+            @extend fl;
+            margin-right: 40px;
+            border-bottom: 4px solid transparent;
+        }
+        li:hover{
+            border-bottom: 4px solid $hovercolor;
+            font-weight: 600;
+        }
+        li:nth-of-type(2){
+            border-bottom: 4px solid $hovercolor;
+            font-weight: 600;
+        }
+    }
+}
+    hr{
+        margin-top: -3px;
+        margin-bottom: 20px;
+    }
+.title_top{
+    margin-top: 20px;
+    height: 60px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 20px;
+    color: $fontcolor;
+    background-color: $earecolor;
+}
+.title_top:hover{
+    color: blue;
+    font-weight: 600;
+}
+.title_left{
+    float: left;
+    width: 72%;
+    .title_main{
+        height: 150px;
+        @extend fonthight;
+        background: $maincolor;
+        ul{
+            
+            padding: 20px;
+            width: 48%;
+            float: left;
+            li{ 
+                a{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+.title_right{
+    float: right;
+    .ritop{
+        width: 240px;
+        color: black;
+    }
+    .rimain{
+        background-color: $maincolor;
+        padding: 20px;
+        height: 90px;
+        #s{
+            background: $fontcolor;
+            color: white;
+            width: 60%;
+            padding: 15px; 
+        }
+        #s:hover{
+            background-color: blue;
+        }
+    }
+}
+//第二部分
+.secone{
+    width: 35%;
+    background-color: $maincolor;
+    border: 1px solid #ccc;
+    float: left;
+    margin:0 18px 10px 0;
+    img{
+        float: left;
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
+    ul{
+        height: 80px;
+        overflow: hidden;
+        color: #888;
+        li{
+            line-height: 20px;
+            span{
+                line-height: 40px;
+                font-size: 16px;
+                font-family: arial;
+                font-weight: 600;
+                color: $fontcolor;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+//foot部分
+.footone{
+    overflow: hidden;
+    ul{
+        position: relative;
+        margin-right:289px;
+        float: right;
+        overflow: hidden;
+        li{
+            padding: 20px 0;
+            float: left;
+            margin-right: 10px;
+            width: 40px;
+            input{
+                background-color: white;
+                width: 45px;
+                height: 35px;
+                border: none;  
+            }
+            .input:hover{
+                background-color: $fontcolor;
+                color: white;
+            }
+        }
+        li:nth-of-type(7){
+            width: 80px;
+            margin-top: 10px;
+        }
+        
+        li:nth-of-type(9){
+            margin-top: 10px;
+        }
+        .ten:hover{
+            background-color: $fontcolor;color: white;
+        }
+    }
+}
+.eignt{
+    position: relative;
+}
+.jia{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+   right:-2px;
+}
+.jian{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+     left: 0px;
+    
+}
+.back-top{
+    img{
+         width: 50px;
+    }
+    position: fixed;right: 300px;bottom: 50px;
+    width: 50px;height: 50px;
+    background-color: white;
+    float: right;
+}
+}
+.ff{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+//响应式
